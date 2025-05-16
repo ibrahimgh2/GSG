@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Search Filter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        #searchInput {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        #quoteList {
+            list-style: none;
+            padding: 0;
+        }
+        .quote-item {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .error {
+            color: red;
+            padding: 10px;
+            border: 1px solid red;
+            margin-top: 20px;
+            display: none;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quotes Search</h1>
+    <input type="text" id="searchInput" placeholder="Search quotes...">
+    <div id="errorMessage" class="error"></div>
+    <ul id="quoteList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
